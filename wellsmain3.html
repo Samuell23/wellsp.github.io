@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wellspring Education Centre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    header {
+      background-color:DarkGreen;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+    }
+    
+    main {
+      padding: 10px;
+      background-image: url('wellsmp.jpg');
+      background-size: cover;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 100%;
+    }
+    
+    main h2 {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    
+    main p {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    footer {
+      background-color:DarkGreen;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .day-mode {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    .day-mode header {
+      background-color: DarkGreen;
+    }
+    
+    .day-mode nav {
+      background-color: #f4f4f4;
+    }
+    
+    .day-mode nav ul li a {
+      color: #333;
+    }
+    
+    .day-mode main h2,
+    .day-mode main p {
+      color: #333;
+    }
+    
+    .day-mode footer {
+      background-color: DarkGreen;
+    }
+    
+    .night-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    .night-mode header {
+      background-color: #222;
+    }
+    
+    .night-mode nav {
+      background-color: #555;
+    }
+    
+    .night-mode nav ul li a {
+      color: #fff;
+    }
+    
+    .night-mode main h2,
+    .night-mode main p {
+      color: #fff;
+    }
+    
+    .night-mode footer {
+      background-color: #222;
+    }
+    
+    .mode-shift-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: DarkGreen;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function toggleMode() {
+      var body = document.querySelector('body');
+      body.classList.toggle('day-mode');
+      body.classList.toggle('night-mode');
+    }
+  </script>
+</head>
+<body class="day-mode">
+  <header>
+    <h1>Welcome to Wellspring Education Centre</h1>
+  </header>
+  
+  <nav>
+    <ul>
+           <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <button class="mode-shift-button" onclick="toggleMode()">Mode</button>
+  
+  <main>
+    <h2>About Us</h2>
+    <p>Welcome to Wellspring Education Centre! We are a leading educational institution dedicated to providing high-quality education and fostering a nurturing learning environment for our students.</p>
+    
+    <h2>PRIMARY SCHOOL THAT OFFERS:</h2>
+    <h3>CBC Learning System, from:</h3>
+
+    <ul>
+      <li>PLAY GROUP</li>
+      <li>PP1 & PP2</li>
+      <li>GRADE 1 TO GRADE 6</li>
+      <li>This being CBC based curriculum</li>
+    </ul>
+    
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, please feel free to reach out to us:</p>
+    <p>Email: wellspringeduce@gmail.com</p>
+    <p>Phone: 123-456-7890</p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Wellspring Education Centre. All rights reserved.</p>
+  </footer>
+</body>
+</html>
